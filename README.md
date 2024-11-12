@@ -8,7 +8,14 @@ The project utilizes the power of YOLOv5 for object detection, specifically for 
 
 ## Features
 
-- **Custom Dataset**: The model is trained on a dataset tailored for ICU room gesture recognition.
+- **Custom Dataset**: The model is trained on a dataset tailored for ICU room gesture recognition, focusing on the following gesture classes:
+  - **Down**
+  - **Left**
+  - **Right**
+  - **Stop**
+  - **Thumbs Down**
+  - **Thumbs Up**
+  - **Up**
 - **Real-Time Detection**: YOLOv5 provides real-time inference, with the ability to detect gestures and objects within ICU environments.
 - **Model Weights**: The `best.pt` weights file for the trained model is included, enabling quick deployment.
 
@@ -31,7 +38,7 @@ The model has been validated on several test images, demonstrating its ability t
 To perform inference using the model, run the following command:
 
 ```bash
-python detect.py --weights runs/train/weights/best.pt --source [image/video/path]
+python detect.py --weights path/to/best.pt --source [image/video/path]
 ```
 
 This will load the `best.pt` model and perform gesture detection on the provided source.
