@@ -24,7 +24,7 @@ The model is trained and stored as `best.pt` (located inside the `runs/train/exp
 
 The model has been validated on several test images, demonstrating its ability to accurately detect hand gestures in ICU environments. Below is an example of the model's validation results:
 
-![Validation Results](predictions.png)
+![Validation Results](predictions.jpg)
 
 ## Usage
 
